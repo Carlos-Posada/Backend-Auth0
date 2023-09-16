@@ -6,7 +6,7 @@ const Avatar = () => {
 
   if(user) { 
     const name = user.name || user.nickname || user.email;
-    const picture = `https://ui-avatars.com/api/?name=${name}`;
+    const picture = user.picture ||`https://ui-avatars.com/api/?name=${name}`;
 
     return (
       <div className="flex items-center mx-2">
